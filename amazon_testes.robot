@@ -1,3 +1,13 @@
+*** Settings ***
+Documentation    Essa suite testa o site da Amazon.com.br
+Resource         amazon_resources.robot
+Test Setup       Abrir o navegador
+Test Teardown    Fechar o navegador
+
+#Suite Setup     Blablabla    //Executar ação antes de iniciar os casos da suíte
+#Suite Teardown  Blablabla    //Executar ação depois de finalizar os casos da suíte
+
+
 *** Test Cases ***
 
 Caso de Teste 01 - Acesso ao menu "Eletrônicos"
